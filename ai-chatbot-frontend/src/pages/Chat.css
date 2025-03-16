@@ -1,0 +1,283 @@
+/* Chat container */
+.chat-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  /* Header */
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .chat-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Profile icon and menu */
+  .profile-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .menu button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .menu button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Chat history */
+  .chat-history {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Chat form */
+  .chat-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .chat-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .chat-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .chat-form button:hover {
+    background-color: #218838;
+  }
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+
+  
+  .chat-history {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between messages */
+  }
+  
+  .message {
+    position: relative; /* Required for absolute positioning of child elements */
+    max-width: 80%; /* Increase the width of the message box */
+    padding: 15px; /* Increase padding to make the box bigger */
+    border-radius: 10px;
+    margin: 10px 0;
+    min-height: 60px; /* Minimum height for the message box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content to the top and options to the bottom */
+  }
+  
+  .user-message {
+    background-color: #007bff; /* Blue background for user messages */
+    color: white;
+    align-self: flex-start; /* Aligns user messages to the right */
+  }
+  
+  .assistant-message {
+    background-color: #f1f1f1; /* Light gray background for assistant messages */
+    color: black;
+    align-self: flex-end; /* Aligns assistant messages to the left */
+  }
+  
+  .message-options {
+    position: absolute;
+    top: 2px; /* Position at the bottom */
+    right: 5px; /* Position at the right */
+  }
+  
+  .message-menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: inherit;
+  }
+  
+  .message-menu {
+    position: absolute;
+    bottom: 25px; /* Position above the three dots button */
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .message-menu button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .message-menu button:hover {
+    background-color: #f1f1f1;
+  }
+  .view-history-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-history-button:hover {
+    background-color: #0056b3;
+  }
+  /* Light Mode (Default) */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --header-background: #007bff;
+  --header-text: #ffffff;
+  --message-user-background: #007bff;
+  --message-user-text: #ffffff;
+  --message-assistant-background: #f1f1f1;
+  --message-assistant-text: #000000;
+  --input-background: #ffffff;
+  --input-text: #000000;
+  --button-background: #007bff;
+  --button-text: #ffffff;
+  --menu-background: #ffffff;
+  --menu-text: #000000;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --header-background: #1e1e1e;
+  --header-text: #ffffff;
+  --message-user-background: #1e3a8a;
+  --message-user-text: #ffffff;
+  --message-assistant-background: #2d2d2d;
+  --message-assistant-text: #ffffff;
+  --input-background: #2d2d2d;
+  --input-text: #ffffff;
+  --button-background: #1e3a8a;
+  --button-text: #ffffff;
+  --menu-background: #2d2d2d;
+  --menu-text: #ffffff;
+}
+
+/* Apply Variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.chat-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.chat-header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+}
+
+.user-message {
+  background-color: var(--message-user-background);
+  color: var(--message-user-text);
+}
+
+.assistant-message {
+  background-color: var(--message-assistant-background);
+  color: var(--message-assistant-text);
+}
+
+.chat-form input {
+  background-color: var(--input-background);
+  color: var(--input-text);
+  border: 1px solid var(--text-color);
+}
+
+.chat-form button,
+.view-history-button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
+
+.menu {
+  background-color: var(--menu-background);
+  color: var(--menu-text);
+}
+
+.message-menu {
+  background-color: var(--menu-background);
+  color: var(--menu-text);
+}

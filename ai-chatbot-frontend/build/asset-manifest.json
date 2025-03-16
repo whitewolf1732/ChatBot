@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/whitewolf1732/ChatBot/static/css/main.b0d9bcea.css",
+    "main.js": "/whitewolf1732/ChatBot/static/js/main.bc2aa967.js",
+    "static/js/787.9edfe8fb.chunk.js": "/whitewolf1732/ChatBot/static/js/787.9edfe8fb.chunk.js",
+    "index.html": "/whitewolf1732/ChatBot/index.html",
+    "main.b0d9bcea.css.map": "/whitewolf1732/ChatBot/static/css/main.b0d9bcea.css.map",
+    "main.bc2aa967.js.map": "/whitewolf1732/ChatBot/static/js/main.bc2aa967.js.map",
+    "787.9edfe8fb.chunk.js.map": "/whitewolf1732/ChatBot/static/js/787.9edfe8fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0d9bcea.css",
+    "static/js/main.bc2aa967.js"
+  ]
+}

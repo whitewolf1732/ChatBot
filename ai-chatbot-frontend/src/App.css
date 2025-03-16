@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/* Light Mode (Default) */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --header-background: #007bff;
+  --header-text: #ffffff;
+  --message-user-background: #007bff;
+  --message-user-text: #ffffff;
+  --message-assistant-background: #f1f1f1;
+  --message-assistant-text: #000000;
+  --input-background: #ffffff;
+  --input-text: #000000;
+  --button-background: #007bff;
+  --button-text: #ffffff;
+  --menu-background: #ffffff;
+  --menu-text: #000000;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --header-background: #1e1e1e;
+  --header-text: #ffffff;
+  --message-user-background: #1e3a8a;
+  --message-user-text: #ffffff;
+  --message-assistant-background: #2d2d2d;
+  --message-assistant-text: #ffffff;
+  --input-background: #2d2d2d;
+  --input-text: #ffffff;
+  --button-background: #1e3a8a;
+  --button-text: #ffffff;
+  --menu-background: #2d2d2d;
+  --menu-text: #ffffff;
+}
+
+/* Apply Variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.chat-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.chat-header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+}
+
+.user-message {
+  background-color: var(--message-user-background);
+  color: var(--message-user-text);
+}
+
+.assistant-message {
+  background-color: var(--message-assistant-background);
+  color: var(--message-assistant-text);
+}
+
+.chat-form input {
+  background-color: var(--input-background);
+  color: var(--input-text);
+  border: 1px solid var(--text-color);
+}
+
+.chat-form button,
+.view-history-button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
+
+.menu {
+  background-color: var(--menu-background);
+  color: var(--menu-text);
+}
+
+.message-menu {
+  background-color: var(--menu-background);
+  color: var(--menu-text);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
