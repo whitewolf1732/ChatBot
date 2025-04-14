@@ -1,0 +1,118 @@
+/* Profile container */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* User details */
+  .user-details {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .user-details p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .user-details strong {
+    color: #333;
+  }
+  
+  /* Password form */
+  .password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .password-form h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .password-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .password-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .password-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .password-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Actions (Logout and Delete Account buttons) */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  .delete-button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Error and success messages */
+  .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .success {
+    color: #28a745;
+    font-size: 14px;
+    margin: 0;
+  }
